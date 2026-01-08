@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/PaintingsInDishonoredAndHowToGetThem/static/css/main.f855e6bc.css",
-    "main.js": "/PaintingsInDishonoredAndHowToGetThem/static/js/main.29fdd979.js",
+    "main.js": "/PaintingsInDishonoredAndHowToGetThem/static/js/main.ea9c596b.js",
     "index.html": "/PaintingsInDishonoredAndHowToGetThem/index.html",
     "main.f855e6bc.css.map": "/PaintingsInDishonoredAndHowToGetThem/static/css/main.f855e6bc.css.map",
-    "main.29fdd979.js.map": "/PaintingsInDishonoredAndHowToGetThem/static/js/main.29fdd979.js.map"
+    "main.ea9c596b.js.map": "/PaintingsInDishonoredAndHowToGetThem/static/js/main.ea9c596b.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.29fdd979.js"
+    "static/js/main.ea9c596b.js"
   ]
 }
