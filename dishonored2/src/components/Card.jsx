@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 
 const BASE_URL = import.meta.env.BASE_URL;
 
-function Card({ title, eng_title, artist, artist_ingame, painting, images, content }){
+function Card({ game, type, mission, title, eng_title, images, content, details }){
     // 크게 보기 모달을 위한 상태 관리
     const [selectedImg, setSelectedImg] = useState(null);
 
     // 이미지 갤러리를 위한 인덱스 관리
-    const allImages = [painting, ...images];
+    if (type === "Paintings"){
+        const allImages = [details.painting, ...images];
+    }
+    const allImages = [...images];
     const currentIndex = allImages.indexOf(selectedImg)
 
     // 다음 이미지로 이동
@@ -27,15 +30,19 @@ function Card({ title, eng_title, artist, artist_ingame, painting, images, conte
         // 카드의 전체적인 외곽선과 그림자, 배경색 지정
         <div className="flex flex-col md:flex-row max-w-4xl bg-white my-8 rounded-xl shadow-lg overflow-hidden border border-gray-200 mx-auto">
             
+            
             {/* 왼쪽: 메인 성화(Painting) 이미지 */}
-            <div className="md:w-1/3 bg-gray-100 flex justify-center items-center p-4 custom-zoom-in">
-                <img 
-                    src={`${BASE_URL}${painting}`}
-                    className="w-full h-auto shadow-md border-4 border-white transform hover:scale-105 transition-transform duration-300" 
-                    alt={eng_title}
-                    onClick={() => setSelectedImg(painting)}
-                />
-            </div>
+            {type==="Paintings" &&
+                <div className="md:w-1/3 bg-gray-100 flex justify-center items-center p-4 custom-zoom-in">
+                    <img 
+                        src={`${BASE_URL}${details.painting}`}
+                        className="w-full h-auto shadow-md border-4 border-white transform hover:scale-105 transition-transform duration-300" 
+                        alt={eng_title}
+                        onClick={() => setSelectedImg(details.painting)}
+                    />
+                </div>
+            }
+
 
             {/* 오른쪽: 상세 정보 섹션 */}
             <div className="md:w-2/3 p-6 flex flex-col">
@@ -44,16 +51,25 @@ function Card({ title, eng_title, artist, artist_ingame, painting, images, conte
                     <p className="text-sm text-amber-700 italic">{eng_title}</p>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 mb-4 text-sm border-t border-b py-3 border-gray-100">
-                    <div>
-                        <span className="block text-gray-400 uppercase text-[10px] font-bold">Painted by</span>
-                        <p className="font-medium text-gray-800">{artist}</p>
+                {type==="Paintings" &&
+                    <div className="grid grid-cols-2 gap-4 mb-4 text-sm border-t border-b py-3 border-gray-100">
+                        <div>
+                            <span className="block text-gray-400 uppercase text-[10px] font-bold">Painted by</span>
+                            <p className="font-medium text-gray-800">{details.artist}</p>
+                        </div>
+                        <div>
+                            <span className="block text-gray-400 uppercase text-[10px] font-bold">Painted by (In-Game)</span>
+                            <p className="font-medium text-gray-800">{details.artist_ingame}</p>
+                        </div>
                     </div>
+                }
+
+                {type==="BoneCharm" &&
                     <div>
-                        <span className="block text-gray-400 uppercase text-[10px] font-bold">Painted by (In-Game)</span>
-                        <p className="font-medium text-gray-800">{artist_ingame}</p>
+                        <span className="block text-gray-400 uppercase text-[10px] font-bold">Effect</span>
+                        <p className="font-medium text-gray-800">{details.effect}</p>
                     </div>
-                </div>
+                }
 
                 {/* 획득 방법(Images) 섹션 */}
                 <div className="mb-4">
