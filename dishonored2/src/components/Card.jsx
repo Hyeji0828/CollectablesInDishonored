@@ -4,6 +4,23 @@ function Card({ title, eng_title, artist, artist_ingame, painting, images, conte
     // 크게 보기 모달을 위한 상태 관리
     const [selectedImg, setSelectedImg] = useState(null);
 
+    // 이미지 갤러리를 위한 인덱스 관리
+    const allImages = [painting, ...images];
+    const currentIndex = allImages.indexOf(selectedImg)
+
+    // 다음 이미지로 이동
+    const nextImg = (e) => {
+        e.stopPropagation();
+        const nextIdx = (currentIndex + 1) % allImages.length;
+        setSelectedImg(allImages[nextIdx]);
+    }
+    // 이전 이미지로 이동
+    const prevImg = (e) => {
+        e.stopPropagation();
+        const prevIdx = (currentIndex - 1 + allImages.length) % allImages.length;
+        setSelectedImg(allImages[prevIdx]);
+    }
+
     return (
         // 카드의 전체적인 외곽선과 그림자, 배경색 지정
         <div className="flex flex-col md:flex-row max-w-4xl bg-white my-8 rounded-xl shadow-lg overflow-hidden border border-gray-200 mx-auto">
@@ -60,14 +77,39 @@ function Card({ title, eng_title, artist, artist_ingame, painting, images, conte
             {/* 이미지 확대 모달 */}
             {selectedImg && (
                 <div
-                    className = "fixed inset-0 bg-black/80 z-50 flex justify-center items-center cursor-zoom-out p-4 animate-[fadeIn_0.3s_ease-in-out]"
+                    className = "fixed inset-0 bg-black/80 z-50 flex justify-center items-center cursor-zoom-out p-4 animate-[fadeIn_0.15s_ease-in-out]"
                     onClick={()=> setSelectedImg(null)}
                 >
+                    {/* 이전 버튼 */}
+                    <button
+                        className ="absolute left-4 md:left-10 text-white text-5xl hover-text-amber-500 transition-colors z-[60]"
+                        onClick={prevImg}
+                    >
+                        &#10094;
+                    </button>
+
+                    {/* 확대된 이미지 */}
                     <img
                         src={selectedImg}
-                        className = "max-h-full max-w-full rounded-lg shadow-2xl animate-[zoomIn_0.3s_ease-out]"
+                        key={selectedImg}
+                        className = "max-h-full max-w-full rounded-lg shadow-2xl animate-[zoomIn_0.15s_ease-out]"
                         alt="enlarged"
                     />
+
+                    {/* 다음 버튼 */}
+                    <button
+                        className ="absolute right-4 md:right-10 text-white text-5xl hover-text-amber-500 transition-colors z-[60]"
+                        onClick={nextImg}
+                    >
+                        &#10095;
+                    </button>
+
+                    {/* 페이지 번호*/}
+                    <div className="absolute bottom-10 text-white font-mono">
+                        {currentIndex + 1} / {allImages.length}
+                    </div>
+
+                    
                     <button className="absolute top-5 right-5 text-white text-3xl font-bold cursor-pointer">&times;</button>
                 </div>
             )}
