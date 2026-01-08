@@ -8,7 +8,7 @@ function Card({ title, eng_title, artist, artist_ingame, painting, images, conte
             <p>{artist_ingame}</p>
             <div style={{display: 'flex', gap: '10px', flexWrap: 'wrap'}}>
                 {images.map((image, index) => (
-                    <img key={index} src={image} alt={`How to get the painting${index}`} style={imageStyle} />
+                    <img key={index} src={process.env.PUBLIC_URL + image} alt={`How to get the painting${index}`} style={imageStyle} />
                 ))}
             </div>
             <p>{content}</p>
