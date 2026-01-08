@@ -30,7 +30,7 @@ function Card({ title, eng_title, artist, artist_ingame, painting, images, conte
             {/* 왼쪽: 메인 성화(Painting) 이미지 */}
             <div className="md:w-1/3 bg-gray-100 flex justify-center items-center p-4 custom-zoom-in">
                 <img 
-                    src={'${BASE_URL}${painting}'}
+                    src={`${BASE_URL}${painting}`}
                     className="w-full h-auto shadow-md border-4 border-white transform hover:scale-105 transition-transform duration-300" 
                     alt={eng_title}
                     onClick={() => setSelectedImg(painting)}
@@ -62,7 +62,7 @@ function Card({ title, eng_title, artist, artist_ingame, painting, images, conte
                         {images.map((image, index) => (
                             <img 
                                 key={index} 
-                                src={'${BASE_URL}${image}'}
+                                src={`${BASE_URL}${image}`}
                                 className="w-20 h-20 object-cover rounded border border-gray-200 hover:border-amber-500 cursor-pointer transition-colors"
                                 alt={`Location step ${index + 1}`}
                                 onClick={() => setSelectedImg(image)}
