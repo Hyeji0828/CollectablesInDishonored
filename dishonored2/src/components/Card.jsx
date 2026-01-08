@@ -81,7 +81,7 @@ function Card({ id, game, type, mission, title, eng_title, images_count, content
                             <img 
                                 key={index} 
                                 src={imagePath}
-                                className="w-20 h-20 object-cover rounded border border-gray-200 hover:border-amber-500 cursor-pointer transition-colors"
+                                className="w-20 h-20 object-cover rounded border border-gray-200 hover:border-amber-700 cursor-pointer transition-colors"
                                 alt={`How to get ${index + 1}`}
                                 onClick={() => setSelectedImg(imagePath)}
                             />
@@ -89,7 +89,7 @@ function Card({ id, game, type, mission, title, eng_title, images_count, content
                     </div>
                 </div>
 
-                <p className="text-gray-600 text-sm leading-relaxed bg-amber-50 p-3 rounded-lg border-l-4 border-amber-200">
+                <p className="text-gray-600 text-sm leading-relaxed bg-[#000000]/5 p-3 rounded-lg border-l-4 border-amber-700">
                     {content}
                 </p>
             </div>
