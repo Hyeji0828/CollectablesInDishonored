@@ -21,11 +21,22 @@
         "title" : "보일 영애의 흐리멍텅한 논쟁",
         "eng_title" : "The Obtuse Arguments of Lady Boyle",
         "images_count" : 3,
-        "content" : "던월 탑 출입구 근처 갈바니의 아파트에서 찾을 수 있다. 사진 뒤에는 금고 번호가 숨겨져 있다.",
+        "content" : "던월 탑 출입구 근처 갈바니의 사무실에서 찾을 수 있다.",
         "details" : {
             "artist" : "Cedric Peyravernay",
             "artist_ingame" : "Anton Sokolov"
         }
+    },
+    {
+        "id": "01",
+        "game": "d2",
+        "mission": "m1",
+        "type": "safes",
+        "title": "갈바니의 금고",
+        "eng_title": "The safe in the Dr. Galvani's Office",
+        "images_count": 4,
+        "content": "던월 탑 출입구 근처 갈바니의 사무실에 있는 금고는 \"보일 영애의 흐리멍텅한 논쟁\" 그림 뒤에 비밀번호가 쓰여져있다. 비밀번호는 451로 고정이다.",
+        "details": {}
     },
     {
         "id" : "01",
@@ -35,9 +46,305 @@
         "title" : "사무엘 비치워스의 조각상",
         "eng_title" : "Samuel's Beechworth Carving",
         "images_count" : 2,
-        "content" : "세이프룸 방 안에서 찾을 수 있다.",
+        "content" : "안전실 안에서 찾을 수 있다.",
+        "details" : {}
+    },
+    {
+        "id" : "01",
+        "game" : "d2",
+        "mission" : "m2",
+        "type" : "paintings",
+        "title" : "고위주시자 타데우스 캠벨의 평등",
+        "eng_title" : "The Isometry of High Overseer Thaddeus Campbell",
+        "images_count" : 3,
+        "content" : "항구 지구 부둣가에 있는 아파트에서 찾을 수 있다.",
+        "details" :{
+            "artist" : "Cedric Peyravernay",
+            "artist_ingame" : "Anton Sokolov"
+        }
+    },
+    {
+        "id" : "02",
+        "game" : "d2",
+        "mission" : "m2",
+        "type" : "paintings",
+        "title" : "헛된 꿈을 꾸는 방관자",
+        "eng_title" : "The Outsider in Conditional Dreams",
+        "images_count" : 3,
+        "content" : "빛의 장벽 근처 주시자들이 수색하고 있는 건물 2층에서 찾을 수 있다.",
+        "details" :{
+            "artist" : "Cedric Peyravernay",
+            "artist_ingame" : "Anton Sokolov"
+        }
+    },
+    {
+        "id" : "03",
+        "game" : "d2",
+        "mission" : "m2",
+        "type" : "paintings",
+        "title" : "상급 주시자의 논리학",
+        "eng_title" : "The Vice Overseer's Predicate Logic",
+        "images_count" : 3,
+        "content" : "주시자의 전초기지 3층에서 찾을 수 있다.",
         "details" : {
+            "artist" : "Cedric Peyravernay",
+            "artist_ingame" : "Anton Sokolov"
+        }
+    },
+    {
+        "id" : "04",
+        "game" : "d2",
+        "mission" : "m2",
+        "type" : "paintings",
+        "title" : "꿰뚫어보는 하이페시아",
+        "eng_title" : "Hypatia's Projective Gaze",
+        "images_count" : 3,
+        "content" : "애더마이어 철도역 근처 하이페시아의 아파트에서 찾을 수 있다.",
+        "details" : {
+            "artist" : "Sergey Kolesov",
+            "artist_ingame" : "Anton Sokolov"
+        }
+    },
+    {
+        "id" : "01",
+        "game" : "d2",
+        "mission" : "m2",
+        "type" : "souvenir",
+        "title" : "서코노스 근위대원의 투구",
+        "eng_title" : "A helmet of a member of the Grand Serkonan Guard",
+        "images_count" : 1,
+        "content" : "투구를 쓴 정예 근위대를 사살하거나 제압하면 얻을 수 있다. 정예 근위대는 붉은 옷을 입고 있다.",
+        "details":{}
+    },
+    {
+        "id" : "01",
+        "game" : "d2",
+        "mission" : "m2",
+        "type" : "safes",
+        "title" : "주시자의 전초기지 금고",
+        "eng_title" : "The safe in the Overseer Offices",
+        "images_count" : 3,
+        "content" : "주시자의 전초기지 3층에 있는 금고는 같은 층에 있는 테이블 위에서 비밀번호의 힌트를 찾을 수 있다. 금고 옆에 놓여진 책과 힌트를 조합하여 금고를 열 수 있다.",
+        "details":{}
+    },
+    {
+        "id" : "02",
+        "game" : "d2",
+        "mission" : "m2",
+        "type" : "safes",
+        "title" : "윈슬로우 금고 회사의 금고",
+        "eng_title" : "The safe in the Winslow Safe Company",
+        "images_count" : 3,
+        "content" : "애더마이어 철도역 근처 윈슬로우 금고 회사 안에 위치한 금고는 카운터의 동전등록기 안에서 비밀번호를 찾을 수 있다.",
+        "details":{}
+    },
+    {
+        "id" : "01",
+        "game" : "d2",
+        "mission" : "m2",
+        "type" : "blueprints",
+        "title" : "분산 방화 작용재",
+        "eng_title" : "Dispersed Incendiary Release",
+        "images_count" : 3,
+        "content" : "부둣가의 창문이 열린 아파트에 위치한 금고 안에서 찾을 수 있다. 금고는 비밀번호 없이 열 수 있다.",
+        "details":{
+            "effect" : "소이 화살을 구매할 수 있게 된다."
+        }
+    },
+    {
+        "id": "02",
+        "game": "d2",
+        "mission": "m2",
+        "type": "blueprints",
+        "title": "발사대 강화 처리",
+        "eng_title": "Fire Hardening Treatment",
+        "images_count": 2,
+        "content": "주시자의 전초기지 3층에서 얻을 수 있다.",
+        "details": {
+            "effect" : "볼트 화살의 효과를 강화한다."
+        }
+    },
+    {
+        "id": "01",
+        "game": "d2",
+        "mission": "m2",
+        "type": "runes",
+        "title": "룬1,2",
+        "eng_title": "Rune1,2",
+        "images_count": 1,
+        "content": "공허에서 찾을 수 있다.",
+        "details": {
+            "shrine" : true
+        }
+    },
+    {
+        "id": "02",
+        "game": "d2",
+        "mission": "m2",
+        "type": "runes",
+        "title": "룬3",
+        "eng_title": "Rune3",
+        "images_count": 2,
+        "content": "임무를 시작하기 전 흉측한 상처호 근처 바다에서 찾을 수 있다.",
+        "details": {}
+    },
+    {
+        "id": "03",
+        "game": "d2",
+        "mission": "m2",
+        "type": "runes",
+        "title": "룬4",
+        "eng_title": "Rune4",
+        "images_count": 2,
+        "content": "부둣가 고래 시체의 입에서 찾을 수 있다.",
+        "details": {}
+    },
+    {
+        "id": "04",
+        "game": "d2",
+        "mission": "m2",
+        "type": "runes",
+        "title": "룬5",
+        "eng_title": "Rune5",
+        "images_count": 2,
+        "content": "암시장에서 구입하거나 암시장을 털어서 얻을 수 있다.",
+        "details": {}
+    },
+    {
+        "id": "05",
+        "game": "d2",
+        "mission": "m2",
+        "type": "runes",
+        "title": "룬6,7",
+        "eng_title": "Rune6,7",
+        "images_count": 3,
+        "content": "빛의 장벽 근처 주시자들이 수색하고 있는 건물 2층에서 찾을 수 있다.",
+        "details": {
+            "shrine" : true
+        }
+    },
+    {
+        "id": "06",
+        "game": "d2",
+        "mission": "m2",
+        "type": "runes",
+        "title": "룬8",
+        "eng_title": "Rune8",
+        "images_count": 2,
+        "content": "주시자의 전초기지 3층에 있는 금고 안에서 얻을 수 있다.",
+        "details": {}
+    },
+    {
+        "id": "07",
+        "game": "d2",
+        "mission": "m2",
+        "type": "runes",
+        "title": "룬9",
+        "eng_title": "Rune9",
+        "images_count": 2,
+        "content": "주시자의 전초기지 앞 설교하는 주시자의 근처에서 얻을 수 있다.",
+        "details": {}
+    },
+    {
+        "id": "08",
+        "game": "d2",
+        "mission": "m2",
+        "type": "runes",
+        "title": "룬10",
+        "eng_title": "Rune10",
+        "images_count": 4,
+        "content": "하수구에 있는 나무판자를 부셔서 얻을 수 있다.",
+        "details": {}
+    },
+    {
+        "id": "01",
+        "game": "d2",
+        "mission": "m2",
+        "type": "bonecharms",
+        "title": "뼈부적1,2",
+        "eng_title": "Bonecharms1,2",
+        "images_count": 1,
+        "content": "에밀리의 방 책상 옆에서 찾을 수 있다.",
+        "details": {
+            "bonecharm_type": "뼈부적"
+        }
+    },
+    {
+        "id": "02",
+        "game": "d2",
+        "mission": "m2",
+        "type": "bonecharms",
+        "title": "뼈부적3",
+        "eng_title": "Bonecharms3",
+        "images_count": 4,
+        "content": "송장파리가 잠식한 아파트에서 송장파리 둥지를 파괴하고 찾을 수 있다.",
+        "details": {
+            "bonecharm_type": "뼈부적"
+        }
+    },
+    {
+        "id": "03",
+        "game": "d2",
+        "mission": "m2",
+        "type": "bonecharms",
+        "title": "뼈부적4",
+        "eng_title": "Bonecharms4",
+        "images_count": 4,
+        "content": "빛의 장벽 근처 주시자들이 수색하고 있는 건물 2층 나무 바닥에서 찾을 수 있다.",
+        "details": {
+            "bonecharm_type": "뼈부적"
+        }
+    },
+    {
+        "id": "04",
+        "game": "d2",
+        "mission": "m2",
+        "type": "bonecharms",
+        "title": "뼈부적5",
+        "eng_title": "Bonecharms5",
+        "images_count": 3,
+        "content": "건물 옥상 송장파리와 시체 근처에서 찾을 수 있다.",
+        "details": {
+            "bonecharm_type": "뼈부적"
+        }
+    },
+    {
+        "id": "05",
+        "game": "d2",
+        "mission": "m2",
+        "type": "bonecharms",
+        "title": "뼈부적6",
+        "eng_title": "Bonecharms6",
+        "images_count": 3,
+        "content": "주시자의 전초기지 4층 심문실에서 찾을 수 있다.",
+        "details": {
+            "bonecharm_type": "부패한 뼈부적"
+        }
+    },
+    {
+        "id": "06",
+        "game": "d2",
+        "mission": "m2",
+        "type": "bonecharms",
+        "title": "뼈부적7",
+        "eng_title": "Bonecharms7",
+        "images_count": 1,
+        "content": "주시자의 전초기지 앞 설교하는 주시자의 근처에서 얻을 수 있다.",
+        "details": {
+            "bonecharm_type": "뼈부적"
+        }
+    },
+    {
+        "id": "07",
+        "game": "d2",
+        "mission": "m2",
+        "type": "bonecharms",
+        "title": "뼈부적8",
+        "eng_title": "Bonecharms8",
+        "images_count": 3,
+        "content": "애더마이어 철도역 근처 윈슬로우 금고 회사 안 금고에서 찾을 수 있다.",
+        "details": {
+            "bonecharm_type": "뼈부적"
         }
     }
-
 ]
