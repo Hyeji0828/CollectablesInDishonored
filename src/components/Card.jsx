@@ -61,8 +61,6 @@ function Card({ id, game, type, mission, title, eng_title, images_count, content
     // 타입 별 색상
     const typeColor= `var(--color-${type})`;
 
-
-
     return (
         // 카드의 전체적인 외곽선과 그림자, 배경색 지정
         <div className="flex flex-col md:flex-row max-w-4xl bg-white my-8 rounded-xl shadow-lg overflow-hidden border border-gray-200 mx-auto">           
