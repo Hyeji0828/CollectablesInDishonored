@@ -5,6 +5,7 @@ export const NAME_MAP = {
       "All" : "See All",
       "m1" : "A Long Day in Dunwall",
       "m2" : "Edge of the World",
+      "m3" : "The Good Doctor",
       "paintings" : "Painting",
       "safes" : "Safe",
       "souvenir" : "Souvenir", 

@@ -332,5 +332,216 @@
         "images_count": 3,
         "content": "애더마이어 철도역 근처 윈슬로우 금고 회사 안 금고에서 찾을 수 있다.",
         "details": {}
-    }
+    },
+    {
+        "id": "01",
+        "game": "d2",
+        "mission": "m3",
+        "type": "blueprints",
+        "title": "전투용 수면 화살 개조법",
+        "eng_title": "Combat Sleep Dart Formula",
+        "images_count": 5,
+        "content": "주회랑에서 2층으로 접근하면 발견할 수 있는 금고에서 찾을 수 있다.",
+        "details": {
+            "effect" : "전투 중 수면화살"
+        }
+    },
+    {
+        "id": "02",
+        "game": "d2",
+        "mission": "m3",
+        "type": "blueprints",
+        "title": "수은 증기 증류법",
+        "eng_title": "Mercury Vapor Distillation",
+        "images_count": 5,
+        "content": "6층에 있는 해밀턴의 사무실에서 찾을 수 있으며 사무실 열쇠는 질병 대책 부서에서 찾을 수 있다.",
+        "details": {
+            "effect" : ""
+        }
+    },
+    {
+        "id": "01",
+        "game": "d2",
+        "mission": "m3",
+        "type": "bonecharms",
+        "title": "뼈부적1",
+        "eng_title": "Bonecharms1",
+        "images_count": 2,
+        "content": "애더마이어 협회로 타고 온 열차 근처 절벽 아래에서 찾을 수 있다.",
+        "details": {}
+    },
+    {
+        "id": "02",
+        "game": "d2",
+        "mission": "m3",
+        "type": "bonecharms",
+        "title": "뼈부적2",
+        "eng_title": "Bonecharms2",
+        "images_count": 2,
+        "content": "애더마이어 협회 정문 근처에서 찾을 수 있다.",
+        "details": {}
+    },
+    {
+        "id": "03",
+        "game": "d2",
+        "mission": "m3",
+        "type": "bonecharms",
+        "title": "뼈부적3",
+        "eng_title": "Bonecharms3",
+        "images_count": 4,
+        "content": "회복실 왼쪽 복도에서 접근 가능한 방 안에서 찾을 수 있다.",
+        "details": {}
+    },
+    {
+        "id": "04",
+        "game": "d2",
+        "mission": "m3",
+        "type": "bonecharms",
+        "title": "뼈부적4",
+        "eng_title": "Bonecharms4",
+        "images_count": 4,
+        "content": "회복실 안 하이페시아 박사의 책상 위에서 찾을 수 있다.",
+        "details": {}
+    },
+    {
+        "id": "05",
+        "game": "d2",
+        "mission": "m3",
+        "type": "bonecharms",
+        "title": "뼈부적5",
+        "eng_title": "Bonecharms5",
+        "images_count": 2,
+        "content": "가장 높은 건물의 지붕에서 찾을 수 있다.",
+        "details": {}
+    },
+    {
+        "id": "01",
+        "game": "d2",
+        "mission": "m3",
+        "type": "paintings",
+        "title": "포부를 펼치는 루카 아벨",
+        "eng_title": "Duke Abele's Propositional State",
+        "images_count": 2,
+        "content": "주 회랑 빛의 벽 근처에서 찾을 수 있다.",
+        "details": {
+            "artist" : "Sergey Kolesov",
+            "artist_ingame" : "Anton Sokolov"
+        }
+    },
+    {
+        "id": "02",
+        "game": "d2",
+        "mission": "m3",
+        "type": "paintings",
+        "title": "여인의 안과 밖을 바라봤나니",
+        "eng_title": "I Regard Her, Within and Without",
+        "images_count": 3,
+        "content": "회복실 안 하이페시아 박사 책상 위에서 찾을 수 있다.",
+        "details": {
+            "artist" : "Sergey Kolesov",
+            "artist_ingame" : "Anton Sokolov"
+        }
+    },
+    {
+        "id": "03",
+        "game": "d2",
+        "mission": "m3",
+        "type": "paintings",
+        "title": "희미한 빛 속의 안톤 소콜로프",
+        "eng_title": "Anton Sokalov in Subtractive Light",
+        "images_count": 3,
+        "content": "애더마이어 협회 지하실에서 찾을 수 있다. 지하실은 엘리베이터 연결부를 파괴하여 추락시키면 도달할 수 있다.",
+        "details": {
+            "artist" : "Cedric Peyravernay",
+            "artist_ingame" : "Anton Sokolov"
+        }
+    },
+    {
+        "id": "01",
+        "game": "d2",
+        "mission": "m3",
+        "type": "runes",
+        "title": "룬1",
+        "eng_title": "Rune1",
+        "images_count": 3,
+        "content": "애더마이어 협회 1층 식당 기둥에서 찾을 수 있다.",
+        "details": {}
+    },
+    {
+        "id": "02",
+        "game": "d2",
+        "mission": "m3",
+        "type": "runes",
+        "title": "룬2,3",
+        "eng_title": "Rune2,3",
+        "images_count": 3,
+        "content": "애더마이어 협회 4층 외부 건물 안에서 찾을 수 있다.",
+        "details": {}
+    },
+    {
+        "id": "03",
+        "game": "d2",
+        "mission": "m3",
+        "type": "runes",
+        "title": "룬4",
+        "eng_title": "Rune4",
+        "images_count": 2,
+        "content": "회복실 입구 근처에 있는 송장파리 둥지에서 찾을 수 있다.",
+        "details": {}
+    },
+    {
+        "id": "04",
+        "game": "d2",
+        "mission": "m3",
+        "type": "runes",
+        "title": "룬5",
+        "eng_title": "Rune5",
+        "images_count": 2,
+        "content": "가장 높은 건물의 측면부 창문을 통해 접근 가능한 공간에서 찾을 수 있다.",
+        "details": {}
+    },
+    {
+        "id": "05",
+        "game": "d2",
+        "mission": "m3",
+        "type": "runes",
+        "title": "룬6",
+        "eng_title": "Rune6",
+        "images_count": 4,
+        "content": "애더마이어 협회 지하실에서 찾을 수 있다. 지하실은 엘리베이터 연결부를 파괴하여 추락시키면 도달할 수 있다.",
+        "details": {}
+    },
+    {
+        "id": "01",
+        "game": "d2",
+        "mission": "m3",
+        "type": "safes",
+        "title": "애더마이어 협회 2층 금고",
+        "eng_title": "The safe on the secon floor",
+        "images_count": 3,
+        "content": "금고는 주회랑에서 2층으로 접근 가능한 공간에 있으며 비밀번호는 통로 책상 위에 쪽지에 나와있다.",
+        "details": {}
+    },
+    {
+        "id": "02",
+        "game": "d2",
+        "mission": "m3",
+        "type": "safes",
+        "title": "질병 대책 부서의 금고",
+        "eng_title": "The safe in the Disease Treatment",
+        "images_count": 2,
+        "content": "회복실에서 바스코와 대화 혹은 바스코의 시체에서 쪽지를 획득하여 비밀번호를 얻을 수 있다.",
+        "details": {}
+    },
+    {
+        "id": "01",
+        "game": "d2",
+        "mission": "m3",
+        "type": "souvenir",
+        "title": "주사기",
+        "eng_title": "The Syringe",
+        "images_count": 1,
+        "content": "치료제를 완성하여 하이페시아 박사를 비살상으로 제압하면 획득할 수 있다.",
+        "details": {}
+    }  
 ]
